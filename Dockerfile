@@ -1,5 +1,7 @@
 FROM debian
 
+ENV HOME /tmp
+
 ADD https://dl-ssl.google.com/linux/linux_signing_key.pub /tmp/linux_signing_key.pub
 ADD google.list /etc/apt/sources.list.d/google.list'
 
