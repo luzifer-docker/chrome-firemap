@@ -12,7 +12,7 @@ TARGET="$4"
 google-chrome-stable --version
 google-chrome-stable --headless --no-sandbox \
   --hide-scrollbars --disable-gpu --screenshot \
-  --window-size=$W,$H --virtual-time-budget=5000 \
+  --window-size=$W,$H --virtual-time-budget=60000 \
   "http://openfiremap.org/?zoom=${ZOOM}&lat=${LAT}&lon=${LON}&layers=B0000TF"
 
 ls -lh
